@@ -29,18 +29,28 @@ def towerBreakers(n, m):
     # players jogam
     counter = 0 #contador para saber quem está jogando
     while True:
-        for i in range(0,len(towers)):
+        for i in range(0,len(towers)-1):
           counter = counter + 1
           max_index = towers.index(max(towers))
           towers[max_index] =  evenly_divides(towers[max_index])
+          print("towers é")
+          print(towers)
         if 0 in towers:
             break
 
-    
+
     print(counter)
 
     print(towers)
-    
+
+    # define o vencedor
+    if (counter % 2) == 0:
+        print("1 venceu")
+    else:
+        print("2 venceu")
+
+
+
 
 
 
