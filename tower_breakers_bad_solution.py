@@ -8,8 +8,11 @@ def towerBreakers(n, m):
     towers = [i * m for i in towers]
     print(towers)
 
+    deu_1 = 0
+
     def evenly_divides(integer): # método para achar o menor número divisível > 1
         if integer == 1:
+            deu_1 = 1
             return 0
         else:
             numeros_anteriores = list(range(1,integer)) # cria uma lista com os números anteriores
@@ -51,10 +54,18 @@ def towerBreakers(n, m):
     print(towers)
 
     # define o vencedor
-    if (counter % 2) == 0:
-        print("1 venceu")
+    if deu_1 == 1:
+        if (counter % 2) == 0:
+            print("2 venceu")
+        else:
+            print("1 venceu")
     else:
-        print("2 venceu")
+        if (counter % 2) == 0:
+          print("1 venceu")
+        else:
+          print("2 venceu")
+
+
 
 
 n=1 # DÁ PROBLEMA PRA ESSA ENTRADA
