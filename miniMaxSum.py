@@ -13,7 +13,16 @@ import sys
 #
 
 def miniMaxSum(arr):
-    print(arr)
+    menor = min(arr) #menor valor
+    maior = max(arr) #maior valor
+
+    # menor soma não tenho o maior valor
+    menor_soma = sum(arr) - maior
+    
+    #
+    maior_soma = sum(arr) - menor
+
+    print(menor_soma, maior_soma)
     
 
 if __name__ == '__main__':

@@ -26,6 +26,7 @@ def plusMinus(arr):
             count_z = count_z + 1
     
     array_length = len(arr)
+    # faltou o round aqui
     print(count_p/array_length)
     print(count_n/array_length)
     print(count_z/array_length)
