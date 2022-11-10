@@ -8,6 +8,8 @@ def superDigit(n, k):
 
     # soma todos os digitos de p
     soma = 0
+
+    while len(soma)
     for digit in p: 
         soma = soma + int(digit)
     
