@@ -9,19 +9,21 @@ def superDigit(n, k):
     # soma todos os digitos de p
     soma = 0
 
-    while len(soma)
-    for digit in p: 
-        soma = soma + int(digit)
+    x = len(p)
+
+    while x > 1: #-> Dá erro pois ele não recalcula o len(p)?
+        soma = 0
+        for digit in p:
+            soma = soma + int(digit)
+        print("P agora é")
+        p = str(soma)
+        x = len(p)
+        print(p)
+    
+    return p
     
 
-
-    print(soma)
-
-
-
-
-
-n = '148'
-k = 3
+n = '9875'
+k = 1
 
 superDigit(n,k)
