@@ -5,7 +5,5 @@ def noPrefix(words):
             print(words)
             print("true")
     
-
-
 words = ['aab', 'defgab', 'abcde', 'aabcde', 'bbbbbbbbbb', 'jabjjjad']
 noPrefix(words)
